@@ -17,7 +17,7 @@ export default function main(N: number) {
       if (q[j] <= N && check(j)) {
         if (j === N) {
           answers++;
-          console.log("方案%d：", answers, q.slice(1).toString());
+          console.log("方案%d：%s", answers, q.slice(1).toString());
         } else {
           queen(j + 1);
         }
@@ -28,4 +28,4 @@ export default function main(N: number) {
   queen(1);
 }
 
-main(10);
+main(4);
