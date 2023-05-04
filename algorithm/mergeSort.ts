@@ -2,10 +2,9 @@ export default function mergeSort(arr: number[], left: number, right: number) {
   if (left >= right) return;
   // 分解
   const center = Math.floor((right + left) / 2);
+  // 求解
   mergeSort(arr, left, center);
   mergeSort(arr, center + 1, right);
-  // 求解
-
   // 合并
   merge(arr, left, right, center);
 }
