@@ -1,3 +1,15 @@
+/**
+ * 归并排序
+ * 平均时间复杂度 O(nlgn)
+ * 最好时间复杂度 O(nlgn)
+ * 最差时间复杂度 O(nlgn)
+ * 空间复杂度 O(n)
+ * 稳定
+ * 可以归位
+ * @param arr
+ * @param left
+ * @param right
+ */
 export default function mergeSort(arr: number[], left: number, right: number) {
   if (left >= right) return;
   // 分解
